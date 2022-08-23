@@ -1,0 +1,33 @@
+import { Story } from '@storybook/vue3'
+import Ok{{pascalCase name}} from './'
+import readme from './Ok{{pascalCase name}}.md'
+
+export default {
+  title: 'COMPONENT/Ok{{pascalCase name}}',
+  component: Ok{{pascalCase name}},
+  parameters: {
+    docs: {
+      description: {
+        component: readme
+      }
+    }
+  },
+  argTypes: {
+    // Define stories args properties
+    // `on{property}` are consider has event handler
+  }
+}
+
+const Template: Story = args => ({
+  components: { Ok{{pascalCase name}} },
+  setup () {
+    return { args }
+  },
+  template: '<ok-{{kebabCase name}} v-bind="args"/>'
+})
+
+export const Default = Template.bind({})
+Default.args = {
+  // Define args
+}
+

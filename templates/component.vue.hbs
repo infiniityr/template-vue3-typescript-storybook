@@ -1,0 +1,20 @@
+<script setup lang="ts">
+import './Ok{{pascalCase name}}.css'
+
+interface Props {
+    // value: text
+}
+interface Emit {
+    // (e: 'click'): void
+}
+
+const props = defineProps<Props>()
+
+const emit = defineEmits<Emit>()
+</script>
+
+<template>
+  <div class="ok__{{kebabCase name}}">
+    This is a {{kebabCase name}}
+  </div>
+</template>
